@@ -1,15 +1,133 @@
 <!DOCTYPE html>
-<head>  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script></head>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Shop</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+
+        .product {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+        .product-details {
+            margin-top: 20px;
+        }
+
+        .price {
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        .buy-now-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4caf50;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
 <body>
+    <header>
+        <h1>Mobile Shop</h1>
+    </header>
 
-<h1>My First JavaScript</h1>
+    <div class="container">
+        <div class="product">
+            <img src="mobile_phone.jpg" alt="Mobile Phone 1" width="300" height="500">
+            <div class="product-details">
+                <h2>Mobile Phone 1</h2>
+                <p class="price">Price: ₹10,000 INR</p>
+                <button class="buy-now-btn" onclick="getAccessToken(1000000)">Buy Now</button>
+            </div>
+        </div>
 
-<button type="button"
-onclick="document.getElementById('demo').innerHTML = Date()">
-Click me to display Date and Time.</button>
+        <div class="product">
+            <img src="mobile_phone_2.png" alt="Mobile Phone 2" width="300" height="1000">
+            <div class="product-details">
+                <h2>Mobile Phone 2</h2>
+                <p class="price">Price: ₹15,000 INR</p>
+                <button class="buy-now-btn" onclick="getAccessToken(1500000)">Buy Now</button>
+            </div>
+        </div>
 
-<p id="demo"></p>
+        <div class="product">
+            <img src="mobile_phone_3.png" alt="Mobile Phone 3" width="300" height="500">
+            <div class="product-details">
+                <h2>Mobile Phone 3</h2>
+                <p class="price">Price: ₹20,000 INR</p>
+                <button class="buy-now-btn" onclick="getAccessToken(2000000)">Buy Now</button>
+            </div>
+        </div>
 
+        <div class="product">
+            <img src="mobile_phone_4.jpeg" alt="Mobile Phone 4" width="300" height="500">
+            <div class="product-details">
+                <h2>Mobile Phone 4</h2>
+                <p class="price">Price: ₹25,000 INR</p>
+                <button class="buy-now-btn" onclick="getAccessToken(2500000)">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="5.webp" alt="Mobile Phone 5" width="300" height="500">
+            <div class="product-details">
+                <h2>Mobile Phone 5</h2>
+                <p class="price">Price: ₹30,000 INR</p>
+                <button class="buy-now-btn" onclick="getAccessToken(3000000)">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="6.jpeg" alt="Mobile Phone 6" width="300" height="500">
+            <div class="product-details">
+                <h2>Mobile Phone 6</h2>
+                <p class="price">Price: ₹35,000 INR</p>
+                <button class="buy-now-btn" onclick="getAccessToken(3500000)">Buy Now</button>
+            </div>
+        </div>
+    </div>
 </body>
-</html> 
+</html>

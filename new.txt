@@ -1,3 +1,0 @@
-Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at https://uat.setu.co/api/v2/auth/token. (Reason: CORS header ‘Access-Control-Allow-Origin’ missing). Status code: 204.
-
-Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at https://uat.setu.co/api/v2/auth/token. (Reason: CORS request did not succeed). Status code: (null).
